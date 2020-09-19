@@ -1,0 +1,235 @@
+.additional-products {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 25px;
+    right: 0;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      top: 75px;
+    }
+  }
+}
+
+.additional-products__wrapper {
+  padding-top: 14px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 86px;
+    padding-top: 58px;
+  }
+}
+
+.additional-products__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @special-grey;
+    padding-top: 12px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 27px;
+    padding-right: 36px;
+    padding-left: 37px;
+    border-bottom: 1px solid @special-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid @special-grey;
+    border-bottom: none;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional-products__item-last {
+    padding-bottom: none;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-products__item-last {
+    border-bottom: 1px solid @special-grey;
+  }
+}
+
+.additional-products__item-order {
+  padding: 0;
+  padding-top: 43px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.additional-products__title {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 35px;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 0;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+.additional-products__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: @special-dark-grey;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 26px;
+  }
+}
+
+.additional-products__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @special-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    flex-grow: 1;
+  }
+}
+
+.additional-products__block {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: @special-dark-grey;
+  margin-top: 14px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    &--1 {
+      width: 226px;
+    }
+
+    &--2 {
+      width: 164px;
+    }
+
+    &--3 {
+      width: 145px;
+    }
+
+    &--4 {
+      width: 220px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+
+    &--1 {
+      width: 286px;
+    }
+
+    &--2 {
+      width: 286px;
+    }
+
+    &--3 {
+      width: 287px;
+    }
+
+    &--4 {
+      width: 287px;
+    }
+  }
+}
+
+.additional-products__count,
+.additional-products__price {
+  margin: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .additional-products__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+  }
+}
+
+.additional-products__button-order {
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    margin-left: 40px;
+  }
+}

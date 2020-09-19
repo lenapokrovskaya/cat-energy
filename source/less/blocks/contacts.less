@@ -1,0 +1,118 @@
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+  }
+}
+
+.contacts__wrapper {
+  padding: 0;
+}
+
+
+@media (min-width: 1440px) {
+  .contacts__container {
+    position: relative;
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__title {
+  width: 140px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+  }
+}
+
+.contacts__description {
+  width: 140px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  margin: 0;
+  color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 159px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__description-span {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+.contacts__block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 61px;
+    width: 625px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 405px;
+    top: 95px;
+    left: 110px;
+    padding-top: 66px;
+    padding-bottom: 51px;
+    padding-left: 76px;
+    padding-right: 89px;
+    position: absolute;
+    z-index: 1;
+    background-color: @basic-white;
+  }
+}
+
+.contacts__container-form,
+.contacts__container-catalog {
+  background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-white;
+  }
+}
+
+.contacts__map {
+  border: none;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    position: relative;
+  }
+}

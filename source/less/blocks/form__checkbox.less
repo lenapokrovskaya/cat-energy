@@ -1,0 +1,165 @@
+.form__checkbox {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 14px;
+    right: 0;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+  }
+}
+
+.form__checkbox-title {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 26px;
+  margin-bottom: 31px;
+  margin-top: 0;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 0;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.form__checkbox-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 0;
+    margin-right: 0;
+    column-gap: 80px;
+  }
+}
+
+.form__checkbox-item {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__checkbox-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 45px;
+  min-height: 30px;
+  padding-top: 5px;
+
+  &:active {
+    color: rgba(186, 186, 186, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form__checkbox-input + label::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 1px solid @special-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.form__checkbox-input:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 1px solid @special-grey;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+
+  @media (min-width: @tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.form__checkbox-input:hover + label::before {
+  border: 1px solid @special-border-grey-3;
+}
+
+.form__checkbox-input:hover:checked:hover + label::before {
+  border: 1px solid @special-border-grey-3;
+}
+
+.form__checkbox-input:focus:hover + label::before {
+  border: 1px solid @special-border-grey-3;
+}
+
+.form__checkbox-input:focus + label::before {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.form__checkbox-input:active + label::before {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.form__checkbox-input:active:checked:active + label::before {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.form__checkbox-input:focus:checked + label::before {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}

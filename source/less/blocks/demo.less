@@ -1,0 +1,90 @@
+.demo {
+  padding-top: 27px;
+  padding-bottom: 35px;
+  background-color: @special-light-grey-2;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 68px;
+    border-top: 1px solid @special-border-grey-2;
+    background-image: linear-gradient(@basic-white 0%, @basic-white 57%, @special-light-grey-2 57%, @special-light-grey-2 100%);
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 40px;
+    background-image: linear-gradient(@basic-white 0%, @basic-white 29%, @special-light-grey-2 29%, @special-light-grey-2 100%);
+  }
+}
+
+.demo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+    width: 1220px;
+    padding: 0 110px;
+    margin-left: 0 auto;
+  }
+}
+
+.demo__title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 146px;
+    margin-top: 56px;
+  }
+}
+
+.demo__description {
+  width: 279px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    width: 701px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
+}
+
+.demo__list {
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,148 @@
+.form__contacts {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 14px;
+    right: 0;
+    height: 2px;
+    background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.form__contacts-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
+}
+
+.form__contacts-title {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: normal;
+  margin-bottom: 31px;
+  margin-top: 0;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 0;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.form__contacts-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-dark-grey;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__label-phone {
+  width: 108px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 120px;
+  }
+}
+
+.form__label-mail {
+  width: 80px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 95px;
+  }
+}
+
+.form__input-contacts {
+  width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: transparent;
+  border: 1px solid @special-border-grey;
+  outline: none;
+  box-sizing: border-box;
+  min-height: 45px;
+  padding: 0;
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-bottom: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+
+  &:hover {
+    border: 1px solid @special-grey;
+  }
+
+  &:focus + .form__icon-phone {
+    fill: @basic-green;
+  }
+
+  &:focus + .form__icon-mail {
+    fill: @basic-green;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid @special-dark-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

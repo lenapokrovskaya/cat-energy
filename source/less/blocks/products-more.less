@@ -1,0 +1,144 @@
+.products-more {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 24px;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 160px;
+    left: 130px;
+    width: 30px;
+    height: 2px;
+    background-color: @special-light-grey-3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @special-grey-2;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 165px;
+    padding-bottom: 36px;
+    border: 2px solid @basic-grey;
+
+    &::before,
+    &::after {
+      width: 60px;
+      top: 80px;
+      left: 132px;
+      height: 2px;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before,
+    &::after {
+      width: 60px;
+      top: 51px;
+      left: 92px;
+      height: 2px;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.products-more__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    padding-right: 92px;
+    padding-left: 94px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 55px;
+    padding-left: 54px;
+  }
+}
+
+.products-more__description {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: @special-dark-grey;
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    padding-right: 76px;
+    padding-left: 77px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+
+.products-more__button-show {
+  width: 279px;
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  vertical-align: baseline;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: @basic-grey;
+  color: @special-dark-grey;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  outline: none;
+  border: none;
+
+
+  &:hover {
+    background-color: @special-grey-2;
+  }
+
+  &:active,
+  &:focus {
+    color: fade(@special-dark-grey, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
+}
